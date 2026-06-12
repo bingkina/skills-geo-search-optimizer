@@ -31,6 +31,5 @@ htmlcov/
 *.log
 
 # Generated spreadsheet outputs
-51ALLAI_GEO内容正文_10条.xlsx
 ~$*.xlsx
 ~$*.xls
