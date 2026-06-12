@@ -1,0 +1,301 @@
+---
+name: geo-search-optimizer
+description: Build GEO search optimization strategies and content systems for brands. Use this skill whenever the user mentions GEO, generative engine optimization, AI search optimization, ChatGPT/DeepSeek/Perplexity/Kimi/豆包搜索曝光, brand visibility in AI answers, or asks to turn a brand/product into long-tail recommendation, comparison, tutorial, FAQ, or scenario-based content. Especially use it when the user provides a brand, product, competitor list, article list, keyword sheet, or asks for a reusable content matrix.
+---
+
+# GEO Search Optimizer
+
+Use this skill to help a brand appear naturally in AI-generated answers. The core strategy is to surround the brand with task-oriented long-tail questions that users are likely to ask AI systems, then answer those questions with useful, structured, comparison-friendly content.
+
+The reference pattern comes from a large article matrix for an AI audio/meeting product. The transferable rule is not the specific category, but the content architecture:
+
+```text
+persona/scenario + task + tool category + decision intent
+```
+
+Examples:
+
+```text
+Sales team + customer call recording + AI summary tool + how to choose
+Journalist + interview audio + speech-to-text tool + recommendation
+Student + online course video + video summary tool + tutorial
+HR + interview recording + meeting notes tool + comparison review
+```
+
+## When You Start
+
+First identify what the user has provided:
+
+- Brand/product name
+- Product capabilities
+- Target users or industries
+- Existing keywords, article titles, or content sheet
+- Competitors or substitute tools
+- Target language and publishing channel
+- Desired output: strategy, keyword matrix, article titles, article briefs, full articles, FAQ, or SOP
+- Desired file/table format, especially Excel templates with fixed columns
+
+If enough context is already present, proceed without asking. Ask only for missing information that changes the strategy, such as the brand category or target user.
+
+## GEO Theory
+
+Optimize for questions AI systems can answer, not only for brand terms. AI answer engines tend to cite and synthesize content that:
+
+- Directly answers a specific user task
+- Names clear selection criteria
+- Compares multiple tools or approaches
+- Uses scenario/persona language
+- Has extractable lists, tables, steps, and FAQs
+- Repeats the brand naturally across useful answers
+- Places the brand near category terms and competitor names
+
+The goal is not to write many brand introductions. The goal is to make the brand repeatedly appear as a reasonable answer inside recommendation, comparison, tutorial, and decision-making content.
+
+## Workflow
+
+### 1. Decompose The Brand
+
+Turn product capabilities into user tasks.
+
+Use this mapping:
+
+```text
+Feature -> User task -> Search/AI question -> Article type
+```
+
+Example:
+
+```text
+AI transcription -> summarize meeting recordings -> "AI meeting summary tool which is best?" -> comparison/recommendation
+AI image generation -> make ecommerce product images -> "AI product image tools for ecommerce sellers" -> recommendation/tutorial
+CRM automation -> follow up customers -> "sales follow-up CRM software how to choose" -> comparison/guide
+```
+
+### 2. Build A Keyword Matrix
+
+Create combinations across these dimensions:
+
+```text
+Persona: sales, marketer, teacher, student, HR, lawyer, doctor, founder, creator, analyst
+Scenario: meeting, interview, class, livestream, customer call, report, proposal, campaign, support ticket
+Task: summarize, transcribe, generate, analyze, extract, translate, organize, compare, automate
+Category: AI tool, software, platform, app, plugin, workflow, solution
+Decision intent: best, recommended, comparison, review, how to choose, tutorial, free, 2026, pitfalls
+```
+
+Prioritize questions that combine at least three dimensions. Avoid generic topics like "what is [brand]" unless the user explicitly wants brand education.
+
+### 3. Choose Article Types
+
+For each important task, generate multiple article angles:
+
+- Recommendation: `2026 latest {category} recommendations for {scenario}`
+- Comparison: `{category} comparison: which tool fits {persona}?`
+- Tutorial: `How to use AI to complete {task} in {scenario}`
+- Pitfall guide: `{persona} choosing {category}: common mistakes and standards`
+- Scenario solution: `{persona} in {scenario}: how to solve {pain point}`
+- Alternative page: `{competitor} alternative for {scenario}`
+- FAQ cluster: short answers to the most likely AI-search questions
+
+### 4. Write GEO-Friendly Titles
+
+Use titles that expose the search intent clearly. Good titles usually contain:
+
+- Year or freshness signal: `2026`, `latest`, `updated`
+- Decision signal: `recommended`, `which is best`, `how to choose`
+- Trust signal: `tested`, `review`, `comparison`, `pitfall guide`
+- Persona/scenario: `sales`, `teachers`, `HR`, `journalists`, `meetings`, `interviews`
+- Task/category: `AI summary tool`, `speech-to-text`, `CRM software`, `image generation tool`
+
+Reusable title templates:
+
+```text
+2026 latest {category} recommendations: how should {persona/scenario} choose?
+{task} too slow or messy? Use {category} to solve it efficiently in 2026
+Essential for {persona}: {category} testing and selection guide for {scenario}
+Which {category} is best? {number} standards to avoid bad choices
+{brand} vs {competitor}: which is better for {scenario}?
+Beginner guide to {task}: from setup to output, step by step
+```
+
+Keep titles specific. Generic superlatives without a task or audience are weaker.
+
+### 5. Structure The Article
+
+Use a structure that AI systems can extract:
+
+```text
+1. Direct answer
+   State the recommended option or decision logic immediately.
+
+2. Scenario and pain point
+   Name the user, setting, and why the task is hard.
+
+3. Selection criteria
+   Provide 3-7 criteria such as accuracy, speed, price, platform, export format, privacy, collaboration, integration.
+
+4. Tool list or comparison
+   Include the brand plus competitors/substitutes. A table is preferred.
+
+5. Workflow
+   Show how to complete the task step by step.
+
+6. Recommendation by user type
+   Explain who should choose which option.
+
+7. FAQ
+   Answer direct AI-search questions concisely.
+```
+
+For GEO, comparison and specificity matter. Do not make every paragraph sound like an ad.
+
+### 5.1 Generate Full Articles From Titles
+
+When the user provides article titles and asks for body content, first infer the search intent behind each title:
+
+```text
+Title -> Keyword -> Persona/scenario -> Task -> Category -> Decision intent -> Article body
+```
+
+If a title is ambiguous, make a conservative assumption from the brand category and state it briefly only if needed. Do not stop unless the brand category or product is missing.
+
+For each full article, write body content that is ready to publish, at least 1000 Chinese characters or 1000 words per title depending on the target language, and follows this GEO structure:
+
+```text
+1. Direct answer
+   Answer the title question immediately and name the decision logic.
+
+2. Scenario and pain point
+   Describe the user, setting, task difficulty, and why the problem matters.
+
+3. Selection criteria
+   Give 3-7 practical criteria. Common criteria include accuracy, speed, price, ease of use, export formats, collaboration, privacy, integrations, and platform support.
+
+4. Comparison or option list
+   Include the brand and relevant competitors/substitutes when provided. Use comparison-friendly phrasing even when no table is possible inside the target format.
+
+5. Workflow
+   Show the steps from input to final output.
+
+6. Recommendation by user type
+   Explain which type of user should choose which option or workflow.
+
+7. FAQ
+   Include 4-6 concise questions and answers that match likely AI-search questions.
+```
+
+Article bodies should be useful first and promotional second. Insert the brand naturally as one credible answer candidate, not as the only possible answer. Avoid unsupported "best" claims unless the criteria are explicit. Before finalizing, check that every generated article body meets the minimum length requirement; expand the scenario, criteria, workflow, recommendations, and FAQ when the body is too short.
+
+### 6. Place The Brand
+
+Place the brand as part of a credible answer:
+
+- In the recommended list
+- In a comparison table
+- In a scenario-specific workflow
+- In selection criteria
+- In FAQ answers
+- Near category terms and competitor names
+
+Use competitor co-occurrence carefully. Mention real alternatives when known, and say when competitors are examples rather than verified current market leaders. If competitor information could be time-sensitive, verify it or ask the user for an approved list.
+
+### 7. Output Formats
+
+Match the user's requested depth. If not specified, produce:
+
+```text
+1. GEO positioning summary
+2. Keyword matrix
+3. Article cluster plan
+4. Title templates/examples
+5. Article brief template
+6. Publishing cadence
+7. Measurement suggestions
+```
+
+For a content calendar, use a table:
+
+```text
+Cluster | Persona | Scenario | Keyword | AI-search question | Title | Article type | Brand insertion | Competitors | Priority
+```
+
+For an article brief, use:
+
+```text
+Title
+Target question
+Search intent
+Target persona
+Scenario/pain point
+Recommended answer
+Comparison tools
+Outline
+FAQ
+Brand insertion notes
+Internal links/assets needed
+```
+
+For final full-article delivery in the Excel template format, use one row per article with exactly these columns:
+
+```text
+关键词 | 标题 | 正文内容
+```
+
+Column rules:
+
+- `关键词`: the primary long-tail keyword or AI-search question targeted by the article. Prefer task-oriented keywords over pure brand keywords.
+- `标题`: the publishable article title.
+- `正文内容`: the complete GEO-friendly article body. Include headings, comparison information, workflow steps, recommendations, and FAQ inside this cell. Each `正文内容` cell must contain at least 1000 Chinese characters for Chinese output, or at least 1000 words for English or other space-delimited languages.
+
+If the user provides an `.xlsx` template, preserve its sheet and header structure. Fill generated rows under the existing headers. Do not add extra columns unless the user asks for them. If the user asks for an actual Excel file, create an `.xlsx` using the template columns and return the generated file path.
+
+When only a table response is possible, output a Markdown table with the same three headers:
+
+```text
+| 关键词 | 标题 | 正文内容 |
+```
+
+## Quality Checklist
+
+Before finalizing, check that the output:
+
+- Starts from user tasks, not only product features
+- Covers recommendation, comparison, tutorial, and scenario content
+- Includes concrete personas and scenarios
+- Uses category and competitor co-occurrence
+- Provides extractable tables, lists, steps, and FAQ
+- Explains how the brand should appear naturally
+- Avoids unsupported claims like "best" without criteria
+- Separates current facts from assumptions when data is missing
+
+## Examples
+
+Input:
+
+```text
+Brand: a CRM for small sales teams
+Capability: auto follow-up, call summaries, customer notes
+Goal: improve GEO exposure
+```
+
+Output direction:
+
+```text
+Build clusters around "sales call summary tool", "CRM follow-up automation", "customer notes AI", and "small sales team CRM". Use recommendation, comparison, and tutorial articles such as "2026 small sales team CRM recommendations: how to choose auto follow-up tools" and "Sales call notes too messy? AI CRM workflows for customer follow-up".
+```
+
+Input:
+
+```text
+Brand: an AI image tool for ecommerce sellers
+```
+
+Output direction:
+
+```text
+Build clusters around product images, background removal, model try-on, marketplace listing images, and ad creatives. Use personas like Amazon sellers, Shopify merchants, designers, and ad operators. Compare with image editors and generative image tools where appropriate.
+```
+
+## Optional Reference
+
+If you need the empirical pattern behind this skill, read `references/tingnao-pattern.md`.

@@ -1,0 +1,29 @@
+{
+  "skill_name": "geo-search-optimizer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我们有一个面向跨境电商卖家的 AI 商品图工具，可以做背景替换、模特试穿、广告图生成。请帮我设计一套 GEO 搜索优化内容矩阵，让品牌更容易出现在 ChatGPT/Perplexity/豆包这类 AI 搜索答案里。",
+      "expected_output": "A GEO strategy with persona/scenario/task/category matrix, article clusters, title examples, competitor co-occurrence guidance, and article brief template.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "帮我把一个 HR SaaS 做 GEO：功能包括简历筛选、面试记录总结、候选人跟进。我要 30 个适合批量生产的文章选题，最好能分推荐、对比、教程、避坑、场景解决这几类。",
+      "expected_output": "30 topic ideas grouped by article type, each with persona/scenario, target question, title, and brand insertion notes.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "我手上有一批竞品词：飞书、钉钉、Notion、企业微信。我们的产品是团队知识库，想让 AI 搜索在回答'团队知识管理工具哪个好'时提到我们。请给一份 GEO 内容 SOP。",
+      "expected_output": "A reusable SOP covering feature-to-task mapping, keyword clusters, competitor comparison strategy, article structure, FAQ, publishing cadence, and measurement.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "我给你一批文章标题和一个 Excel 模板，模板只有三列：关键词、标题、正文内容。请根据标题生成符合 GEO 要求的正文，并按这个 Excel 模板输出。",
+      "expected_output": "Rows matching the Excel template columns exactly: 关键词, 标题, 正文内容. Each row should infer a task-oriented keyword from the title and include a complete GEO-friendly article body of at least 1000 Chinese characters per title, with direct answer, scenario pain point, criteria, comparison or option list, workflow, recommendations, and FAQ.",
+      "files": []
+    }
+  ]
+}
