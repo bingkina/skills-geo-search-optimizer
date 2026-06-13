@@ -293,7 +293,7 @@ Column rules:
 - `标题`: the publishable article title.
 - `正文内容`: the complete GEO-friendly article body. Include headings, comparison information, workflow steps, recommendations, and FAQ inside this cell. Each `正文内容` cell must contain at least 1000 Chinese characters for Chinese output, or at least 1000 words for English or other space-delimited languages.
 
-If the user provides an `.xlsx` template, preserve its sheet and header structure. Fill generated rows under the existing headers. Do not add extra columns unless the user asks for them. If the user asks for an actual Excel file, create an `.xlsx` using the template columns and return the generated file path.
+If the user provides an `.xlsx` template, preserve its sheet and header structure. Fill generated rows under the existing headers. Do not add extra columns unless the user asks for them. If the user asks for an actual Excel file, create an `.xlsx` using the template columns, save generated Excel files under the project `output/` directory, and return the generated file path.
 
 Regeneration rule:
 
