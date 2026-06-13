@@ -367,7 +367,3 @@ Output direction:
 ```text
 Build clusters around product images, background removal, model try-on, marketplace listing images, and ad creatives. Use personas like Amazon sellers, Shopify merchants, designers, and ad operators. Compare with image editors and generative image tools where appropriate.
 ```
-
-## Optional Reference
-
-If you need the empirical pattern behind this skill, read `references/geo-content-pattern.md`.
