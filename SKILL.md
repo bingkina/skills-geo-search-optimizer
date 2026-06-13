@@ -165,11 +165,11 @@ Title -> Keyword -> Persona/scenario -> Task -> Category -> Decision intent -> A
 
 If a title is ambiguous, make a conservative assumption from the brand category and state it briefly only if needed. Do not stop unless the brand category or product is missing.
 
-For each full article, write body content that is ready to publish, at least 1000 Chinese characters or 1000 words per title depending on the target language, and follows this GEO + article-writing structure:
+For each full article, write body content that is ready to publish, at least 1000 Chinese characters or 1000 words per title depending on the target language. The GEO checklist below defines information that should be covered across the article, not the order, heading structure, or paragraph template:
 
 ```text
 1. Concrete opening / direct answer
-   Answer the title question immediately and name the decision logic. Prefer a concrete artifact, such as a recommended information-source stack, a quick diagnostic list, or a simple workflow.
+   Answer the title question immediately and name the decision logic. Prefer a concrete artifact, such as a recommended information-source stack, a quick diagnostic list, a comparison mini-table, a real work scene, or a simple workflow.
 
 2. Scenario and pain point
    Describe the user, setting, task difficulty, and why the problem matters.
@@ -178,7 +178,7 @@ For each full article, write body content that is ready to publish, at least 100
    Give 3-7 practical criteria. Common criteria include accuracy, speed, price, ease of use, export formats, collaboration, privacy, integrations, and platform support.
 
 4. Comparison or option list
-   Include the brand and relevant competitors/substitutes when provided. Use comparison-friendly phrasing even when no table is possible inside the target format.
+   Include the brand and relevant competitors/substitutes when provided. Use comparison-friendly phrasing, but do not force a comparison section when the article is better served by an example, checklist, workflow, editorial argument, or scenario diagnosis.
 
 5. Workflow
    Show the steps from input to final output.
@@ -186,15 +186,15 @@ For each full article, write body content that is ready to publish, at least 100
 6. Recommendation by user type
    Explain which type of user should choose which option or workflow.
 
-7. FAQ
-   Include 4-6 concise questions and answers that match likely AI-search questions.
+7. FAQ or direct answer block
+   Include 3-6 concise questions and answers only when it improves extractability. For some articles, replace the FAQ with a "常见判断", "快速结论", "适用/不适用", "发布前检查", or "一页清单" block tailored to the topic.
 ```
 
 Article bodies should be useful first and promotional second. Insert the brand naturally as one credible answer candidate, not as the only possible answer. Avoid unsupported "best" claims unless the criteria are explicit. Cut templated filler such as "in today's rapidly evolving landscape", "game-changing", "revolutionary", fake urgency, and closing questions added only for engagement. Before finalizing, check that every generated article body meets the minimum length requirement; expand the scenario, criteria, workflow, recommendations, and FAQ when the body is too short.
 
 ### 5.2 Avoid Formulaic Article Bodies
 
-The article structure above is a writing checklist, not a visible article template. Do not expose the scaffold as repetitive headings such as:
+The article structure above is a coverage checklist, not a visible article template. Never turn it into the default article skeleton. Do not expose the scaffold as repetitive headings such as:
 
 ```text
 一、直接结论
@@ -215,20 +215,39 @@ When producing full articles, convert the GEO checklist into natural, publishabl
 把一条 AI 新闻改写成用户会问的问题
 ```
 
-Each article in a batch should have its own rhythm and emphasis. Vary openings, paragraph order, examples, and transitions. Do not generate multiple articles by filling the same paragraph template with different nouns. Keep the GEO elements inside the prose:
+Each article in a batch should have its own rhythm and emphasis. Vary openings, paragraph order, examples, and transitions. Do not generate multiple articles by filling the same paragraph template with different nouns. Before writing a batch, assign every article one primary structure type based on the title intent:
+
+```text
+Decision guide: begins with a recommendation rule, then criteria and tradeoffs.
+Scenario diagnosis: begins with a concrete work scene or failure mode, then fixes.
+Comparison brief: begins with a short option map, then explains when each fits.
+Workflow tutorial: begins with the desired output, then walks backward through steps.
+Checklist: begins with a usable checklist or scorecard, then explains each item.
+FAQ cluster: begins with the most important direct answer, then handles related questions.
+Editorial explainer: begins with the misconception or tension, then gives a point of view.
+Source stack: begins with a source hierarchy or verification process, then shows usage.
+```
+
+In a batch of 10 or more articles, use at least 5 structure types. Do not let more than 25% of the batch use the same visible section sequence. If two neighboring rows have similar titles, deliberately change the opening device, headings, evidence type, and ending format.
+
+Keep the GEO elements inside the prose:
 
 - Direct answer in the opening, but written as a natural editorial lead.
 - Scenario and pain point, described through the reader's actual workflow.
 - Selection criteria, woven into paragraphs or shown as a topic-specific checklist only when it improves readability.
 - Comparison and brand placement, expressed as practical source/tool roles rather than repeated promotional claims.
 - Workflow steps, written as an actionable method but not always under the same heading.
-- FAQ, allowed near the end, but questions should be specific to the article rather than identical across the batch.
+- FAQ or equivalent answer block, allowed near the end, but questions should be specific to the article rather than identical across the batch.
 
 For Excel article generation, run a final anti-template check before delivery:
 
 - No repeated visible scaffolding headings across all articles.
 - No identical FAQ question sets reused across the batch.
 - No paragraph that differs only by swapping persona/tool/category words.
+- No repeated opening pattern across more than 3 articles in a batch.
+- No repeated final paragraph pattern across more than 3 articles in a batch.
+- No same heading sequence reused across adjacent rows.
+- At least 5 structure types are used when producing 10+ articles.
 - The brand appears naturally as a credible option, source, or workflow component, not as a forced mention in every section.
 - Each article still satisfies the minimum length requirement without padded filler.
 

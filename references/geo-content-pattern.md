@@ -78,29 +78,19 @@ The brand is inserted as an answer candidate, not as the only topic:
 
 This creates category association and competitor co-occurrence, both useful for AI-answer retrieval and synthesis.
 
-## Reusable Article Skeleton
+## Reusable Coverage Pattern
+
+This pattern is a coverage checklist, not a repeated article skeleton. For batch production, vary the visible article form while preserving the underlying GEO signals.
 
 ```text
 Title: 2026 latest {category} recommendations: how should {persona/scenario} choose?
 
-Opening:
-Name a real user and pain point.
+Possible opening devices:
+Recommendation rule, work scene, misconception, checklist, option map, source stack, failure diagnosis.
 
-Direct answer:
-Give a selection recommendation, including where the brand fits.
+Core information:
+Direct answer, scenario pain, criteria, brand + competitors/substitutes, workflow, user-fit recommendation, extractable answer block.
 
-Criteria:
-Accuracy, speed, platform, price, privacy, export, collaboration, integrations.
-
-Comparison:
-Brand + competitors/substitutes.
-
-Workflow:
-Input -> process -> review -> export/share.
-
-Recommendation:
-Map user types to best-fit options.
-
-FAQ:
-Answer 4-6 direct questions.
+Batch variation:
+Use different article forms such as decision guide, scenario diagnosis, comparison brief, workflow tutorial, checklist, FAQ cluster, editorial explainer, and source stack. Avoid reusing the same heading sequence in adjacent rows.
 ```

@@ -22,7 +22,7 @@
     {
       "id": 4,
       "prompt": "我给你一批文章标题和一个 Excel 模板，模板只有三列：关键词、标题、正文内容。请根据标题生成符合 GEO 要求的正文，并按这个 Excel 模板输出。",
-      "expected_output": "Rows matching the Excel template columns exactly: 关键词, 标题, 正文内容. Each row should infer a task-oriented keyword from the title and include a complete GEO-friendly article body of at least 1000 Chinese characters per title, with direct answer, scenario pain point, criteria, comparison or option list, workflow, recommendations, and FAQ.",
+      "expected_output": "Rows matching the Excel template columns exactly: 关键词, 标题, 正文内容. Each row should infer a task-oriented keyword from the title and include a complete GEO-friendly article body of at least 1000 Chinese characters per title. Bodies should cover GEO signals such as direct answer, scenario pain point, criteria, comparison or option list, workflow, recommendations, and an extractable answer block, but must not reuse the same visible heading sequence, FAQ set, opening pattern, or paragraph template across the batch.",
       "files": []
     }
   ]
