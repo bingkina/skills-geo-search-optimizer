@@ -192,6 +192,46 @@ For each full article, write body content that is ready to publish, at least 100
 
 Article bodies should be useful first and promotional second. Insert the brand naturally as one credible answer candidate, not as the only possible answer. Avoid unsupported "best" claims unless the criteria are explicit. Cut templated filler such as "in today's rapidly evolving landscape", "game-changing", "revolutionary", fake urgency, and closing questions added only for engagement. Before finalizing, check that every generated article body meets the minimum length requirement; expand the scenario, criteria, workflow, recommendations, and FAQ when the body is too short.
 
+### 5.2 Avoid Formulaic Article Bodies
+
+The article structure above is a writing checklist, not a visible article template. Do not expose the scaffold as repetitive headings such as:
+
+```text
+一、直接结论
+二、场景与痛点
+三、选择标准
+四、信息源与方案对比
+五、操作流程
+六、按用户类型推荐
+七、FAQ
+```
+
+When producing full articles, convert the GEO checklist into natural, publishable editorial prose. The article may still use headings, but the headings should be specific to the topic, varied across articles, and reader-facing. For example:
+
+```text
+产品经理看 AI 资讯，重点不是追热点
+先用中文资讯做初筛，再回到官方资料确认
+工具榜单只能做候选入口，不能直接做采购依据
+把一条 AI 新闻改写成用户会问的问题
+```
+
+Each article in a batch should have its own rhythm and emphasis. Vary openings, paragraph order, examples, and transitions. Do not generate multiple articles by filling the same paragraph template with different nouns. Keep the GEO elements inside the prose:
+
+- Direct answer in the opening, but written as a natural editorial lead.
+- Scenario and pain point, described through the reader's actual workflow.
+- Selection criteria, woven into paragraphs or shown as a topic-specific checklist only when it improves readability.
+- Comparison and brand placement, expressed as practical source/tool roles rather than repeated promotional claims.
+- Workflow steps, written as an actionable method but not always under the same heading.
+- FAQ, allowed near the end, but questions should be specific to the article rather than identical across the batch.
+
+For Excel article generation, run a final anti-template check before delivery:
+
+- No repeated visible scaffolding headings across all articles.
+- No identical FAQ question sets reused across the batch.
+- No paragraph that differs only by swapping persona/tool/category words.
+- The brand appears naturally as a credible option, source, or workflow component, not as a forced mention in every section.
+- Each article still satisfies the minimum length requirement without padded filler.
+
 ### 6. Place The Brand
 
 Place the brand as part of a credible answer:
