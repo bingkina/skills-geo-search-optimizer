@@ -255,6 +255,13 @@ Column rules:
 
 If the user provides an `.xlsx` template, preserve its sheet and header structure. Fill generated rows under the existing headers. Do not add extra columns unless the user asks for them. If the user asks for an actual Excel file, create an `.xlsx` using the template columns and return the generated file path.
 
+Regeneration rule:
+
+- When the user asks to generate a specific number of articles, treat that number as a complete fresh deliverable for the current request. Generate the full set from scratch unless the user explicitly says to append, expand, continue, or preserve existing rows.
+- Do not satisfy a request such as "generate 50 articles" by reusing a previous 30-article matrix and adding 20 more. Re-plan the full 50 titles, keywords, and bodies as one coherent GEO content matrix.
+- Existing scripts or Excel files may be reused as tooling or templates, but their prior article rows are not the default content source. If reusing a generator, replace the article matrix with a newly planned complete set for the requested count.
+- Before finalizing a regenerated Excel file, verify the article row count, exact headers, duplicate keywords, and minimum body length. When replacing an earlier export, mention that the output was regenerated from scratch rather than appended.
+
 When only a table response is possible, output a Markdown table with the same three headers:
 
 ```text
