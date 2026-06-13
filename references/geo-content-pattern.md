@@ -1,6 +1,6 @@
-# Tingnao AI GEO Pattern Reference
+# GEO Content Pattern Reference
 
-This reference summarizes the content patterns extracted from a large spreadsheet of AI audio/meeting-related articles. Use it for grounding when designing GEO systems for other brands.
+This reference summarizes content patterns extracted from a large GEO article matrix. Use it for grounding when designing GEO systems for brands in different categories.
 
 ## Dataset Shape
 
@@ -47,7 +47,7 @@ The successful pattern is:
 User identity -> real pain -> task -> tool category -> selection criteria -> comparison -> workflow -> recommendation
 ```
 
-Example categories from the original matrix:
+Example categories from the source matrix:
 
 ```text
 speech-to-text

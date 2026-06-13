@@ -31,5 +31,6 @@ htmlcov/
 *.log
 
 # Generated spreadsheet outputs
+*.xlsx
 ~$*.xlsx
 ~$*.xls

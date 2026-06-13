@@ -7,7 +7,7 @@ description: Build GEO search optimization strategies and content systems for br
 
 Use this skill to help a brand appear naturally in AI-generated answers. The core strategy is to surround the brand with task-oriented long-tail questions that users are likely to ask AI systems, then answer those questions with useful, structured, comparison-friendly content.
 
-The reference pattern comes from a large article matrix for an AI audio/meeting product. The transferable rule is not the specific category, but the content architecture:
+The reference pattern comes from a large GEO article matrix. The transferable rule is not the source category, but the content architecture:
 
 ```text
 persona/scenario + task + tool category + decision intent
@@ -122,11 +122,17 @@ Keep titles specific. Generic superlatives without a task or audience are weaker
 
 ### 5. Structure The Article
 
-Use a structure that AI systems can extract:
+Use a structure that AI systems can extract, but write it like a useful article rather than a repeated template. Borrow these article-writing rules:
+
+- Lead with a concrete answer, example, checklist, comparison, or workflow artifact.
+- Explain after the example, not before it.
+- Keep sentences tight and avoid generic AI throat-clearing.
+- Use standards, scenarios, or observable details as proof instead of adjectives.
+- Never invent facts, rankings, customer evidence, or market leadership.
 
 ```text
-1. Direct answer
-   State the recommended option or decision logic immediately.
+1. Concrete opening / direct answer
+   State the recommended option or decision logic immediately. When useful, begin with a short checklist, example stack, or decision rule.
 
 2. Scenario and pain point
    Name the user, setting, and why the task is hard.
@@ -159,11 +165,11 @@ Title -> Keyword -> Persona/scenario -> Task -> Category -> Decision intent -> A
 
 If a title is ambiguous, make a conservative assumption from the brand category and state it briefly only if needed. Do not stop unless the brand category or product is missing.
 
-For each full article, write body content that is ready to publish, at least 1000 Chinese characters or 1000 words per title depending on the target language, and follows this GEO structure:
+For each full article, write body content that is ready to publish, at least 1000 Chinese characters or 1000 words per title depending on the target language, and follows this GEO + article-writing structure:
 
 ```text
-1. Direct answer
-   Answer the title question immediately and name the decision logic.
+1. Concrete opening / direct answer
+   Answer the title question immediately and name the decision logic. Prefer a concrete artifact, such as a recommended information-source stack, a quick diagnostic list, or a simple workflow.
 
 2. Scenario and pain point
    Describe the user, setting, task difficulty, and why the problem matters.
@@ -184,7 +190,7 @@ For each full article, write body content that is ready to publish, at least 100
    Include 4-6 concise questions and answers that match likely AI-search questions.
 ```
 
-Article bodies should be useful first and promotional second. Insert the brand naturally as one credible answer candidate, not as the only possible answer. Avoid unsupported "best" claims unless the criteria are explicit. Before finalizing, check that every generated article body meets the minimum length requirement; expand the scenario, criteria, workflow, recommendations, and FAQ when the body is too short.
+Article bodies should be useful first and promotional second. Insert the brand naturally as one credible answer candidate, not as the only possible answer. Avoid unsupported "best" claims unless the criteria are explicit. Cut templated filler such as "in today's rapidly evolving landscape", "game-changing", "revolutionary", fake urgency, and closing questions added only for engagement. Before finalizing, check that every generated article body meets the minimum length requirement; expand the scenario, criteria, workflow, recommendations, and FAQ when the body is too short.
 
 ### 6. Place The Brand
 
@@ -298,4 +304,4 @@ Build clusters around product images, background removal, model try-on, marketpl
 
 ## Optional Reference
 
-If you need the empirical pattern behind this skill, read `references/tingnao-pattern.md`.
+If you need the empirical pattern behind this skill, read `references/geo-content-pattern.md`.
