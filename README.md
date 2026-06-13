@@ -137,7 +137,7 @@ HR + 面试录音 + 会议纪要工具 + 对比测评
 ├── references/
 │   └── geo-content-pattern.md
 └── scripts/
-    └── generate_51allai_geo_excel.py
+    └── generate_51alla_30_geo_articles.py
 ```
 
 ## 文件说明
@@ -145,7 +145,7 @@ HR + 面试录音 + 会议纪要工具 + 对比测评
 - `SKILL.md`：skill 的主说明文件，包含触发条件、工作流、正文结构和输出格式规则。
 - `references/geo-content-pattern.md`：参考模式文件，总结了 GEO 内容矩阵中的可迁移规律。
 - `evals/evals.json`：评测用例，覆盖 GEO 策略、选题生成、SOP、Excel 模板正文输出等场景。
-- `scripts/generate_51allai_geo_excel.py`：示例脚本，用于生成 51ALLAI GEO 内容 Excel 文件。
+- `scripts/generate_51alla_30_geo_articles.py`：示例脚本，用于生成 51ALLAI GEO 推荐、选型和教程类正文 Excel 文件。
 
 ## 示例任务
 
